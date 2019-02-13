@@ -41,16 +41,16 @@ const Nav = () => (
     <nav>
       <ul style={style.ul}>
 
-        <li ><Link to="/" style={style.li}><h1>Home</h1></Link></li>{" "}
-        <li><Link to="rounds" style={style.li}><h1>Rounds</h1></Link></li>
-        <li><Link to="dashboard" style={style.li}><h1>Dashboard</h1></Link></li>
-        <li><Link to="login" style={style.liA}><h1>Login</h1></Link></li>
+        <li ><Link to="/home" style={style.li}><h1>Home</h1></Link></li>{" "}
+        <li><Link to="/rounds" style={style.li}><h1>Rounds</h1></Link></li>
+        <li><Link to="/dashboard" style={style.li}><h1>Dashboard</h1></Link></li>
+        <li><Link to="/login" style={style.liA}><h1>Login</h1></Link></li>
 
       </ul>
     </nav>
     
     <Router>
-      <Home path="/" />
+      <Home path="/home" />
       <Rounds path="/rounds"/>
       <Dashboard path="/dashboard"/>
       <Login path="/login"/>
